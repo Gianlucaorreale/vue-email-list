@@ -7,12 +7,12 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.7.4/dist/vue.js"></script>
-  <title>Vue-todolist</title>
+  <title>Vue-email-list</title>
 </head>
 <body>
-<div>
+<div id="root">
   <ul>
-    <li id="email-list"></li>
+    <li v-for="email in emails"> {{email}} </li>
   </ul>
 </div>
 
